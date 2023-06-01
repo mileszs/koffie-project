@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "881f7422-e4f1-4ad8-94ba-48414236bb78",
+		"name": "Koffie Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17659709"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/remove",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"vin\": \"VIN1234567890WXYZ\" }"
+				},
+				"url": {
+					"raw": "localhost:8000/remove",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"remove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/lookup?vin=1XKWDB0X57J211825",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/lookup?vin=1XKWDB0X57J211825",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"lookup"
+					],
+					"query": [
+						{
+							"key": "vin",
+							"value": "1XKWDB0X57J211825"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/export",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/export",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"export"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
